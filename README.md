@@ -35,4 +35,43 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
+
+    ```
+    veiculos.Add(Console.ReadLine());
+    ```
+
+Pedir para o usuário digitar a placa e armazenar na variável placa
+
+    ```
+    string placa = Console.ReadLine();
+    ```
+
+Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
+
+    ```
+    int horas = int.Parse(Console.ReadLine());
+    ```
+
+Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal
+    
+    ``` 
+    decimal valorTotal = precoInicial + precoPorHora * horas;
+    ```
+
+Remover a placa digitada da lista de veículos
+
+    ```
+    veiculos.Remove(placa);
+    ```
+
+Realizar um laço de repetição, exibindo os veículos estacionados
+
+    ```
+    foreach(string veiculo in veiculos)
+    {
+        Console.WriteLine(veiculo);
+    }
+    ```
+
