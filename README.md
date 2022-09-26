@@ -37,41 +37,37 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 ## Solução
 
 Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
-
-    ```
+~~~csharp
     veiculos.Add(Console.ReadLine());
-    ```
+~~~
 
 Pedir para o usuário digitar a placa e armazenar na variável placa
 
-    ```
+~~~csharp
     string placa = Console.ReadLine();
-    ```
+~~~
 
 Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
-
-    ```
+~~~csharp
     int horas = int.Parse(Console.ReadLine());
-    ```
+~~~
 
 Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal
     
-    ``` 
+~~~csharp
     decimal valorTotal = precoInicial + precoPorHora * horas;
-    ```
+~~~
 
 Remover a placa digitada da lista de veículos
-
-    ```
+~~~csharp
     veiculos.Remove(placa);
-    ```
+~~~
 
 Realizar um laço de repetição, exibindo os veículos estacionados
-
-    ```
+ ~~~csharp
     foreach(string veiculo in veiculos)
     {
         Console.WriteLine(veiculo);
     }
-    ```
+~~~
 
